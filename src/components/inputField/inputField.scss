@@ -1,0 +1,25 @@
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+
+    label {
+        font-size: .9rem;
+    }
+
+    .inputField {
+        height: 36px;
+        outline: none;
+        border: 1px solid gray;
+        background-color: rgb(246, 238, 238);
+    }
+
+    .inputField.is-invalid {
+        border: 1px solid red;
+    }
+
+    .error {
+        color: red;
+        font-size: .7rem;
+    }
+}

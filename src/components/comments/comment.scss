@@ -1,0 +1,22 @@
+.comment {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10px;
+
+        .msg,
+        .name {
+            font-size: 15px;
+        }
+
+        .date {
+            font-size: 12px;
+            margin: 0 10px;
+            color: gray;
+        }
+    }
+}

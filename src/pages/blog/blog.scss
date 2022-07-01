@@ -1,0 +1,85 @@
+.blog {
+    .blogContainer {
+        display: flex;
+        flex-direction: row;
+
+        .left,
+        .right {
+            background-color: #f1f1f1;
+            flex: 1.23;
+        }
+
+        .center {
+            // max-width: 1100px;
+            flex: 5;
+            margin: 0 auto;
+            padding: 10px;
+
+            .action_header {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 10px;
+
+                .layout_btn {
+                    display: flex;
+                    font-size: 20px;
+
+                    .grid_view,
+                    .list_view {
+                        padding: 5px 10px;
+                        cursor: pointer;
+                        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+                    }
+
+                    .list_view {
+                        margin: 0 5px;
+                    }
+                }
+
+                .searchContainer {
+                    display: flex;
+                    font-size: 14px;
+
+                    input {
+                        height: 30px;
+                        padding-left: 5px;
+                        outline: none;
+                        border: 1px solid gray;
+                        background-color: rgb(246, 238, 238);
+                    }
+                }
+            }
+
+            .blog_notFound {
+                margin: 10px;
+            }
+
+            .pagination {
+                margin: 20px 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .btn_container {
+                    display: flex;
+                    justify-content: center;
+
+                    button {
+                        font-size: 16px;
+                        font-weight: 700;
+                        padding: 12px 14px;
+                        border-radius: 50%;
+                        color: white;
+                        background-color: #343A40;
+                        border: none;
+                        margin: 0 1px;
+                        cursor: pointer;
+                        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+                    }
+                }
+            }
+        }
+    }
+}

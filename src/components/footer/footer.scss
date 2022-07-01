@@ -1,0 +1,129 @@
+.footer {
+    background-color: #263238;
+    color: white;
+
+    .footerContainer {
+        max-width: 1100px;
+        margin: 0 auto;
+
+        .footer_title {
+            background-color: #28A745;
+            text-align: center;
+            border-radius: 10px;
+            padding: 20px 0;
+        }
+
+        .links h3,
+        .social h3 {
+            border-bottom: 1px solid #7c4dff;
+            max-width: fit-content;
+            padding-bottom: 5px;
+        }
+
+        .links {
+            display: flex;
+            padding: 20px;
+
+            .company_name,
+            .useful_links,
+            .contact {
+                flex: 1;
+                margin: 30px 0;
+            }
+
+            .company_name {
+                flex: 1.5 !important;
+
+                p {
+                    width: 70%;
+                    line-height: 1.5;
+                }
+            }
+
+            .contactDetails {
+                display: flex;
+                align-items: center;
+
+                span {
+                    margin: 5px 0 !important;
+                }
+
+                .footer_icon {
+                    margin-right: 10px !important;
+                }
+            }
+
+            span,
+            p {
+                margin: 15px 0;
+                display: block;
+                font-size: 16px;
+            }
+        }
+
+        .social {
+            border-top: 1px solid rgba(255, 255, 255, .1);
+            padding: 20px 0px;
+
+            h3 {
+                margin: 0 auto !important;
+            }
+
+            .social_widget {
+                display: flex;
+                justify-content: center;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 60px;
+                    width: 60px;
+                    margin: 20px 10px 0 10px;
+                    background-color: #1E272E;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    transition: 0.5s;
+
+                    &:nth-child(1) {
+                        &:hover {
+                            color: #3c40c6;
+                            box-shadow: 0 0 20px #3c40c6, 0 0 20px #3c40c6, 0 0 20px #3c40c6;
+                            transform: rotate(360deg);
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        &:hover {
+                            color: #ef5777;
+                            box-shadow: 0 0 20px #ef5777, 0 0 20px #ef5777, 0 0 20px #ef5777;
+                            transform: rotate(360deg);
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        &:hover {
+                            color: #0fbcf9;
+                            box-shadow: 0 0 20px #0fbcf9, 0 0 20px #0fbcf9, 0 0 20px #0fbcf9;
+                            transform: rotate(360deg);
+                        }
+                    }
+
+                    &:nth-child(4) {
+                        &:hover {
+                            color: #1e90ff;
+                            box-shadow: 0 0 20px #1e90ff, 0 0 20px #1e90ff, 0 0 20px #1e90ff;
+                            transform: rotate(360deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        background-color: #1E282D;
+        text-align: center;
+        padding: 20px 0;
+    }
+}

@@ -1,0 +1,59 @@
+.contact {
+
+    h1 {
+        text-align: center;
+        color: rgb(63, 61, 61);
+        margin: 20px 0px;
+    }
+
+    p {
+        text-align: center;
+        color: gray;
+        width: 800px;
+        margin: 20px auto;
+    }
+
+    .contactContainer {
+        display: flex;
+
+        .contact_left {
+            flex: 5;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+
+            .send {
+                background-color: #343A40;
+            }
+
+            input,
+            textarea {
+                margin: 20px 0px;
+                padding-bottom: 10px;
+                font-size: 16px;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid rgb(220, 214, 214);
+
+                &:focus {
+                    border-bottom: 2px solid rgb(26, 163, 226);
+                }
+            }
+
+        }
+
+        .contact_right {
+            flex: 1.5;
+            padding: 20px 20px 0px 20px;
+
+            .location,
+            .mail,
+            .phone {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 70px;
+                text-align: center;
+            }
+        }
+    }
+}
